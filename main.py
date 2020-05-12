@@ -74,13 +74,15 @@ def main():
       #Write content to file passing in path and user information.
       filepath = writeDataToFile(path, user_name, user_address, user_phone)
 
+      #Read File back to user
       readFile(filepath)
+    
 
     runApp = input("\nEnter more data? y or n: ")
     if runApp == "n":
       break
-    
-    continue
+    else:
+      continue
 
   
     
